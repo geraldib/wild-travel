@@ -11,6 +11,7 @@ export const register = async (req, res) => {
   );
 
   user.password = bcrypt.hashSync(req.body.password, 8);
+  user.role = 'user';
 
   try {
     const userExist = await User.findOne({ email: req.body.email });
@@ -38,8 +39,11 @@ export const register = async (req, res) => {
 
       const userData = {
         id: user._id,
-        name: user.name,
         email: user.email,
+        name: user.name,
+        surname: user.surname,
+        phone: user.phone,
+        role: user.role
       };
 
       return res.status(201).send({

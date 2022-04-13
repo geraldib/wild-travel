@@ -14,10 +14,21 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    surname: {
+      type: String,
+      required: true,
+    },
+    phone: {
+      type: Number,
+      required: true,
+    },
     password: {
       type: String,
       required: true,
     },
+    role: {
+      type: String,
+    }
   },
   {
     timestamps: true,

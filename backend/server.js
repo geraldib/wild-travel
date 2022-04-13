@@ -4,6 +4,7 @@ import path from 'path';
 
 // import configs
 import { config } from './config.js';
+import { createAdmin } from './database/seeds/userSeed.js';
 import { apiRoutes } from './routes/index.js';
 
 // start express app
@@ -14,6 +15,9 @@ const app = express();
 
 // config server
 config(app);
+
+//init seed
+createAdmin();
 
 // init routes
 apiRoutes(app);
