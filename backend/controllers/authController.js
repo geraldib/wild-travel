@@ -11,7 +11,7 @@ export const register = async (req, res) => {
   );
 
   user.password = bcrypt.hashSync(req.body.password, 8);
-  user.role = 'office';
+  user.role = 'user';
 
   try {
     const userExist = await User.findOne({ email: req.body.email });
