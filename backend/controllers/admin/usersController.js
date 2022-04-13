@@ -1,6 +1,6 @@
-import { User } from '../models/user.model.js';
+import { User } from '../../models/user.model.js';
 import bcrypt from 'bcryptjs';
-import * as userService from '../services/userService.js';
+import * as userService from '../../services/userService.js';
 
 export const getUsers = async (_, res) => {
   try {
