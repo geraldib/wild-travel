@@ -1,27 +1,25 @@
 import React from 'react';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import Dashboard from './Pages/Dashboard';
 
-import Navbar from "./components/Navbar"
-import ExercisesList from "./components/ExercisesList";
-import EditExercise from "./components/EditExercise";
-import CreateExercise from "./components/CreateExercise";
-import CreateUser from "./components/CreateUser";
-
-const App = () => {
+function App() {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <Navbar />
-        <br/>
-        <Routes>
-          <Route path="/" exact element={<ExercisesList/>} />
-          <Route path="/edit/:id" element={<EditExercise/>} />
-          <Route path="/create" element={<CreateExercise/>} />
-          <Route path="/user" element={<CreateUser/>} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <>
+      <Router>
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<Dashboard />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+        </div>
+      </Router>
+      <ToastContainer />
+    </>
   );
 }
 
