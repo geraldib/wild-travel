@@ -6,11 +6,11 @@ import { isOffice } from '../middleware/roles/isOffice.js';
 const router = express.Router();
 
 //Admin Routes
-// router.get('/', verifyToken, isOffice, tripController.getTrips);
+router.get('/', verifyToken, isOffice, tripController.getTrips);
 router.post('/add', verifyToken, isOffice, tripController.storeTrip);
-// router.get('/:id', verifyToken, isOffice, tripController.getTrip);
-// router.post('/update/:id', verifyToken, isOffice, tripController.updateTrip);
-// router.delete('/:id', verifyToken, isOffice, tripController.deleteTrip);
+router.get('/:id', verifyToken, isOffice, tripController.getTrip);
+router.post('/update/:id', verifyToken, isOffice, tripController.updateTrip);
+router.delete('/:id', verifyToken, isOffice, tripController.deleteTrip);
 
 //User Routes
 

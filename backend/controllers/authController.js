@@ -19,7 +19,7 @@ export const register = async (req, res) => {
     if (userExist) {
       return res
         .status(409)
-        .send({ message: 'This user is alredy registered' });
+        .send({ message: 'This user is already registered' });
     } else {
       if (!emailReg.test(req.body.email)) {
         return res.status(400).send({
@@ -29,7 +29,7 @@ export const register = async (req, res) => {
 
       if (!passReg.test(req.body.password)) {
         return res.status(400).send({
-          message: 'Password must contain at least 6 caracters and 1 number',
+          message: 'Password must contain at least 6 characters and 1 number',
         });
       }
 

@@ -16,10 +16,12 @@ const tripSchema = new Schema(
     dates: [
       {
         type: Date,
+        required: true,
       },
     ],
     description: {
       type: String,
+        required: true,
     },
     office: {
       type: mongoose.Schema.Types.ObjectId,

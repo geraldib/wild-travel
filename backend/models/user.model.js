@@ -26,12 +26,6 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    trips: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'trip',
-      },
-    ],
     role: {
       type: String,
     },
