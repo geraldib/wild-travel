@@ -1,9 +1,9 @@
-import React, {useCallback, useEffect, useState} from 'react';
-import {useNavigate} from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
-import {toast} from "react-toastify";
-import {login, reset} from "../features/auth/authSlice";
-import Spinner from "../components/Spinner";
+import React, { useCallback, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
+import { login, reset } from '../features/auth/authSlice';
+import Spinner from '../components/Spinner';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const { user, isLoading, isError, isSuccess, message } = useSelector(
-      (state) => state.auth
+    (state) => state.auth
   );
 
   useEffect(() => {
@@ -21,11 +21,10 @@ const Login = () => {
       toast.error(message);
     }
     if (isSuccess || user) {
-      navigate('/');
+      navigate('/dashboard');
     }
     dispatch(reset());
   }, [user, isError, isLoading, isSuccess, navigate, dispatch]);
-
 
   const handleEmail = useCallback(
     (e) => {
@@ -45,13 +44,13 @@ const Login = () => {
     e.preventDefault();
     const userData = {
       email,
-      password
-    }
+      password,
+    };
     dispatch(login(userData));
   };
 
-  if(isLoading) {
-    return <Spinner />
+  if (isLoading) {
+    return <Spinner />;
   }
 
   return (
