@@ -1,7 +1,12 @@
 
 function Spinner() {
     return (
-        <div>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '500px',
+            fontSize: '30px'}}>
             <h2>Loading...</h2>
         </div>
     )
