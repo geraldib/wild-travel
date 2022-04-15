@@ -49,6 +49,10 @@ const Login = () => {
     dispatch(login(usedData));
   };
 
+  if(isLoading) {
+    return <Spinner />
+  }
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
