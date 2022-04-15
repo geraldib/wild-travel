@@ -43,11 +43,11 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const usedData = {
+    const userData = {
       email,
       password
     }
-    dispatch(login(usedData));
+    dispatch(login(userData));
   };
 
   if(isLoading) {
