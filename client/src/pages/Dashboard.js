@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout, reset } from '../features/auth/authSlice';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -9,6 +9,11 @@ const Dashboard = () => {
 
   const { user } = useSelector((state) => state.auth);
 
+  useEffect(() => {
+    if(!user) {
+      navigate('/login');
+    }
+  }, [user, navigate])
   const onLogout = () => {
     dispatch(logout());
     dispatch(reset());
