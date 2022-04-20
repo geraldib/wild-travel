@@ -1,0 +1,113 @@
+/**=====================
+  66. Select 2 CSS Start
+==========================**/
+.add-post {
+  #cke_text-box {
+    border: 1px solid $light-semi-gray;
+  }
+  form {
+    .m-checkbox-inline {
+      label {
+        margin-bottom: 0;
+      }
+    }
+    .form-group {
+      margin-bottom: 30px;
+      .form-control {
+        border: 1px solid $light-semi-gray;
+      }
+      .col-form-label {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+    }
+  }
+  .dropzone {
+    margin-bottom: 30px;
+  }
+}
+.select2-drpdwn {
+  .form-control {
+    border-radius: 5px;
+  }
+  .form-control-primary {
+    border-color: var(--theme-default);
+    color: var(--theme-default)
+  }
+  .form-control-secondary {
+    border-color: var(--theme-default);
+    color: var(--theme-default);
+  }
+  .form-control-success {
+    border-color: $success-color;
+    color: $success-color;
+  }
+  .form-control-info {
+    border-color: $light-font;
+    color: $light-font;
+  }
+  .form-control-warning {
+    border-color: $warning-color;
+    color: $warning-color;
+  }
+  .form-control-danger {
+    border-color: $danger-color;
+    color: $danger-color;
+  }
+  .form-control-inverse {
+    border-color: $dark-color;
+    color: $dark-color;
+  }
+  .form-control-primary-fill {
+    background-color: var(--theme-default);
+    color: $white;
+    &:focus {
+      background-color: var(--theme-default);
+    }
+  }
+  .form-control-secondary-fill {
+    background-color: var(--theme-secondary);
+    color: white;
+    &:focus {
+      background-color: var(--theme-secondary);
+    }
+  }
+  .form-control-success-fill {
+    background-color: $success-color;
+    color: $white;
+    &:focus {
+      background-color: $success-color;
+    }
+  }
+  .form-control-info-fill {
+    background-color: $light-font;
+    color: $white;
+    &:focus {
+      background-color: $light-font;
+    }
+  }
+  .form-control-warning-fill {
+    background-color: $warning-color;
+    color: $white;
+    &:focus {
+      background-color: $warning-color;
+    }
+  }
+  .form-control-danger-fill {
+    background-color: $danger-color;
+    color: $white;
+    &:focus {
+      background-color: $danger-color;
+    }
+  }
+  .form-control-inverse-fill {
+    background-color: $dark-color;
+    color: $white;
+    &:focus {
+      background-color: $dark-color;
+    }
+  }
+}
+/**=====================
+  66. Select 2 CSS Ends
+=========================**/

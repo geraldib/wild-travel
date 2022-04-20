@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem Ipsum is simply dummy text of the printing industry",
+        "url": "Wingoeducation.info/",
+        "detail": "Wingo introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.",
+        "star": "2.5 stars",
+        "vote": "590 votes",
+        "news": "Music",
+        "videoLink": "https://www.youtube.com/embed/CJnfAXlBRTE"
+    },
+    {
+        "id": 2,
+        "title": "Proin eleifend metus vel erat faucibus, ut bibendum nulla iaculis.",
+        "url": "Wingoeducation.info/",
+        "detail": "Wingo introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.",
+        "star": "2.5 stars",
+        "vote": "590 votes",
+        "news": "Music",
+        "videoLink": "https://www.youtube.com/embed/tRjG45ut8gU"
+    },
+    {
+        "id": 3,
+        "title": "Fusce rutrum elit aliquet nisi malesuada cursus.",
+        "url": "Wingoeducation.info/",
+        "detail": "Wingo introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.",
+        "star": "2.5 stars",
+        "vote": "590 votes",
+        "news": "Music",
+        "videoLink": "https://www.youtube.com/embed/-L4gEk7cOfk"
+    },
+    {
+        "id": 4,
+        "title": "Morbi feugiat mauris vel semper fringilla.",
+        "url": "Wingoeducation.info/",
+        "detail": "Wingo introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.",
+        "star": "2.5 stars",
+        "vote": "590 votes",
+        "news": "Music",
+        "videoLink": "https://www.youtube.com/embed/wpmHZspl4EM"
+    },
+    {
+        "id": 5,
+        "title": "Fusce rutrum elit aliquet nisi malesuada cursus.",
+        "url": "Wingoeducation.info/",
+        "detail": "Wingo introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.",
+        "star": "2.5 stars",
+        "vote": "590 votes",
+        "news": "Music",
+        "videoLink": "https://www.youtube.com/embed/-L4gEk7cOfk"
+    }
+]

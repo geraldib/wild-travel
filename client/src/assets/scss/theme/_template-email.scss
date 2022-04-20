@@ -1,0 +1,121 @@
+/**=====================
+  75. Template Email CSS Start
+==========================**/
+.desc {
+  text-align: center;
+  color: #aba8a8;
+  font-size: 14px;
+}
+.sale-product {
+  margin-top: 30px;
+  .imgClass {
+    width: 100%;
+  }
+}
+.menu {
+  width: 100%;
+}
+.menu li a {
+  text-transform: capitalize;
+  color: #444;
+  font-size: 16px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+.main-logo {
+  padding: 10px 20px;
+}
+.product-box .product {
+  border: 1px solid #ddd;
+  text-align: center;
+  position: relative;
+  margin: 0 15px;
+}
+.product-info {
+  margin-top: 15px;
+}
+.product-info h6 {
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  margin-top: 0;
+}
+.product-info h4 {
+  font-size: 16px;
+  color: #444;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1;
+}
+.add-with-banner > td {
+  padding: 0 15px;
+}
+.footer-social-icon tr td img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.temp-social td {
+  display: inline-block;
+}
+.temp-social td i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #24695c;
+  background-color: #24695c3d;
+  transition: all 0.5s ease;
+}
+.temp-social td:nth-child(n + 2) {
+  margin-left: 15px;
+}
+.banner-class {
+  margin-top: 40px;
+  .banner-td {
+    line-height: 45px;
+  }
+  .week-border {
+    border-top: 1px solid #f02e4e;
+  }
+  .week-Heading {
+    color: #333333;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  .Heading {
+    color: #333333;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  .banner-table {
+    margin-top: 30px;
+  }
+}
+.cosmetic .img-banner {
+  width: 100%;
+}
+.banner-table {
+  margin-top: 30px;
+  .img-banner {
+    width: 100%;
+  }
+}
+.social {
+  margin-top: 30px;
+}
+/**=====================
+  75. Template email CSS Ends
+==========================**/

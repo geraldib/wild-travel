@@ -1,0 +1,46 @@
+@import "~bootstrap-scss/bootstrap.scss";
+@import 'vendors/fontawesome.scss';
+@import 'vendors/icofont.scss';
+@import 'vendors/themify.scss';
+@import 'vendors/whether-icon.scss';
+@import 'vendors/flag-icon.scss';
+@import "vendors/chartist/chartist";
+@import 'style';
+@import 'responsive.scss';
+@import 'animate.scss';
+// Datepicker
+@import "~react-datepicker/dist/react-datepicker.css";
+
+//clock
+@import '~react-clock/dist/Clock.css';
+
+//Input Range slider
+// @import "~react-range/lib/css/index.css";
+
+//  ImageCrop
+@import "~react-image-crop/dist/ReactCrop.css";
+
+//  Timeline
+@import "~react-vertical-timeline-component/style.min.css";
+
+// Drag&Drop
+@import "~react-dragula/dist/dragula.css";
+
+//scroll
+@import "~react-perfect-scrollbar/dist/css/styles.css";
+
+// ReactToastify
+@import "~react-toastify/dist/ReactToastify.css";
+
+// Timepicker
+// @import "~react-times/css/material/default.css";
+// @import "~react-times/css/classic/default.css";
+
+// Image gallery
+@import "~react-image-lightbox/style.css";
+@import "~react-big-calendar/lib/sass/styles.scss";
+
+//LeafLet
+@import '~leaflet/dist/leaflet.css';
+
+@import '@asseinfo/react-kanban/dist/styles.css';

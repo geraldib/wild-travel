@@ -1,0 +1,23 @@
+/**=====================
+  12. Calendar CSS Start
+==========================**/
+// calender
+.rbc-calendar {
+  height: 1000px !important;
+}
+#external-events {
+  position: absolute;
+  z-index: 2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: $transparent-color;
+  overflow-y: auto;
+  width: 90%;
+}
+#external-events .fc-event {
+  margin: 1em 0;
+  cursor: move;
+}
+/**=====================
+  12. Calendar CSS End
+==========================**/

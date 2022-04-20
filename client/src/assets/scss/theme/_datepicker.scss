@@ -1,0 +1,148 @@
+/**=====================
+  24. Datepicker CSS Start
+==========================**/
+.daterangepicker {
+  td,
+  th {
+    &.available {
+      &:hover {
+        background-color: var(--theme-default);
+      }
+    }
+  }
+}
+.datetime-picker {
+  .react-datepicker__navigation.react-datepicker__navigation--previous{
+    top: 10px;
+    left: 8px;
+  }
+  .react-datepicker__navigation.react-datepicker__navigation--next{
+    top: 10px;
+    right: 92px;
+  }
+  .theme-form {
+    .input-group {
+      flex-wrap: nowrap;
+    }
+  }
+}
+.date-picker, .date-range-picker {
+  .react-datepicker__navigation {
+    top: 12px;
+  }
+  .react-datepicker__navigation.react-datepicker__navigation--previous {
+    left: 12px;
+  }
+  .react-datepicker__navigation.react-datepicker__navigation--next {
+    right: 12px;
+  }
+}
+.datepicker--day-name {
+  color: $black;
+  font-weight: bold;
+}
+.datepicker--cell {
+  &.-current- {
+    color: $black;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid var(--theme-default);
+  }
+  &.-focus- {
+    background: var(--theme-default);
+    color: $white;
+  }
+  &.-selected- {
+    background: var(--theme-default);
+  }
+}
+.daterangepicker.ltr {
+  color: $dark-gray;
+  z-index: 8;
+  tr {
+    font-size: 13px;
+    td {
+      height: 34px;
+      width: 34px;
+      &.in-range {
+        background-color: $auth-bg-color;
+      }
+      &.active {
+        background-color: var(--theme-default);
+      }
+    }
+  }
+  .ranges {
+    float: none;
+    li {
+      color: var(--theme-default);
+      &:hover {
+        background-color: var(--theme-default);
+        border: 1px solid var(--theme-default);
+        color: $white;
+      }
+      &.active {
+        background-color: var(--theme-default);
+        border: 1px solid var(--theme-default);
+        color: $white;
+      }
+    }
+  }
+  .calendar-time select {
+    color: $dark-gray;
+  }
+}
+.datetime-picker {
+  .bootstrap-datetimepicker-widget.dropdown-menu {
+    width: auto;
+  }
+}
+.date-range-picker {
+  > div {
+    &:last-child {
+      .theme-form {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+.daterangepicker {
+  &:before {
+    border-bottom: 7px solid $light-semi-gray;
+  }
+  .daterangepicker_input {
+    i {
+      font-size: 14px;
+      color: $semi-dark;
+    }
+  }
+  .input-mini {
+    border-color: $light-semi-gray !important;
+    font-size: 14px;
+    color: $semi-dark;
+  }
+  th,
+  td {
+    height: 34px;
+    width: 34px;
+    &:hover {
+      color: $dark-color;
+    }
+    &.prev,
+    &.next {
+      color: $white;
+      height: 34px;
+      width: 34px;
+      background-color: var(--theme-default);
+    }
+    &.month {
+      color: var(--theme-default);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
+/**=====================
+  24. Datepicker CSS End
+==========================**/

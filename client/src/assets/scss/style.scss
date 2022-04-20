@@ -1,0 +1,190 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: viho Admin
+    Template URI: themes.pixelstrap.com/viho
+    Description: This is Admin theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+-----------------------------------------------------------------------------------
+01. According CSS
+02. Alert CSS
+03. Avatars CSS
+04. Badge CSS
+05. Base input CSS
+06. Blog CSS
+07. Bookmark app CSS
+08. Bookmark CSS
+09. Box layout CSS
+10. Breadcrumb CSS
+11. Button CSS
+12. Calendar CSS
+13. Card CSS
+14. Cart CSS
+15. Chart CSS
+16. Chat CSS
+17. Checkout CSS
+18. Coming soon CSS
+19. Contacts CSS 
+20. Custom theme option CSS
+21. Dashboard 2 CSS
+22. Dashboard default CSS
+23. Datatable CSS
+24. Datepicker CSS
+25. Dropdown CSS
+26. Ecommerce CSS
+27. Email Application CSS
+28. Error page CSS
+29. FAQ CSS
+30. File CSS
+31. Footer CSS
+32. Form input CSS
+33. Form Widgets CSS
+34. Forms CSS
+35. Gallery CSS
+36. General CSS
+37. Generic CSS
+38. Grid CSS
+39. Header CSS
+40. Icons CSS
+41. Invoice CSS
+42. Job search CSS
+43. Kanban CSS
+44. Knowledgbase CSS
+45. Form Wizard CSS
+46. Learning CSS
+47. List CSS
+48. Loader CSS
+49. Login CSS
+50. Megaoption CSS
+51. Navs CSS
+52. Order history CSS
+53. Other Success CSS
+54. Page CSS
+55. Popover CSS
+56. Pricing CSS
+57. Print CSS
+58. Progress CSS
+59. Projectlist CSS
+60. Radio Button CSS
+61. React Plugin CSS
+62. Responsive CSS
+63. Ribbon CSS
+64. RTL CSS
+65. Search CSS
+66. Select 2 CSS
+67. Sidebar CSS
+68. Social app CSS
+69. Steps CSS
+70. SVG CSS
+71. Switch CSS
+72. Tab CSS
+73. Table CSS
+74. Task CSS
+75. Template Email CSS
+76. Template email 2 CSS
+77. Theme customizer CSS
+78. TODO CSS
+79. Touchspin CSS
+80. Typeahead search CSS
+81. User profile CSS
+82. Wishlist CSS
+83. Auth Login CSS
+84. TimePicker CSS
+85. Variable CSS
+86. Slick CSS
+*/
+
+@import "utils/variables";
+
+:root {
+    --theme-default: #26695c;
+    --theme-secondary: #c29873;
+}
+
+@import "theme/general";
+@import "theme/generic";
+@import "theme/card";
+@import "theme/loader";
+@import "theme/header";
+@import "theme/sidebar";
+@import "theme/dashboard_default";
+@import "theme/dashboard_2";
+@import "slick";
+@import "slick-theme";
+@import "theme/alert";
+@import "theme/buttons";
+@import "theme/grid";
+@import "theme/errorpage";
+@import "theme/icons";
+@import "theme/email-application";
+@import "theme/chat";
+@import "theme/alert";
+@import "theme/popover";
+@import "theme/list";
+@import "theme/switch";
+@import "theme/megaoption";
+@import "theme/touchspin";
+@import "theme/select2";
+@import "theme/user-profile";
+@import "theme/todo";
+@import "theme/progress";
+@import "theme/according";
+@import "theme/login";
+@import "theme/authLogin.scss";
+@import "theme/forms";
+@import "theme/comingsoon";
+@import "theme/radio";
+@import "theme/form-input";
+@import "theme/datatable";
+@import "theme/page";
+@import "theme/ecommerce";
+@import "theme/pricing";
+@import "theme/navs";
+@import "theme/dropdown";
+@import 'scrollable.scss';
+@import 'theme/scroll';
+@import "theme/table";
+@import "theme/chart";
+@import "theme/tab";
+@import "theme/gallery";
+@import "theme/blog";
+@import "theme/footer";
+@import "theme/form-wizard";
+@import "theme/badge";
+@import "theme/search";
+@import "theme/datepicker";
+@import "theme/ribbon";
+@import "theme/breadcrumb";
+@import "theme/steps";
+@import "theme/theme-customizer";
+@import "theme/faq";
+@import "theme/knowledgebase";
+@import "theme/job-search";
+@import "theme/learning";
+@import "theme/order-history";
+@import "theme/social-app";
+@import "theme/avatars";
+@import "theme/bookmark";
+@import "theme/cart";
+@import "theme/wishlist";
+@import "theme/checkout";
+@import "theme/bookmark-app";
+@import "theme/contacts";
+@import "theme/task";
+@import "theme/invoice";
+@import "theme/form-widgets";
+@import "theme/kanban";
+@import "theme/projectlist";
+@import "theme/file";
+@import 'theme/typeahead-search';
+@import 'theme/other-success';
+@import 'theme/template-email';
+@import 'theme/template-email2';
+@import 'theme/calendar';
+@import 'vendors/sticky.scss';
+@import 'theme/react-plugin';
+@import 'owlcarousel.scss';
+@import "theme/svg";
+@import "theme/box-layout";
+@import "theme/rtl";
+@import "theme/custom-theme-options";
+@import "theme/timepicker";

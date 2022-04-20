@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "image": "user/1.jpg",
+    "name": "Pork Lorn",
+    "type": "Inbox",
+    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    "time": "09:59 AM",
+    "favourite": false
+  },
+  {
+    "id": 2,
+    "image": "user/2.png",
+    "name": "Dee Deo",
+    "type": "Inbox",
+    "text": "Popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    "time": "08:59 AM",
+    "favourite": false
+  },
+  {
+    "id": 3,
+    "image": "user/3.jpg",
+    "name": "Peg Legge",
+    "type": "Inbox",
+    "text": "A Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.",
+    "time": "07:59 AM",
+    "favourite": false
+  },
+  {
+    "id": 4,
+    "image": "user/4.jpg",
+    "name": "Olive Yew",
+    "type": "Inbox",
+    "text": "Looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.",
+    "time": "05:59 AM",
+    "favourite": false
+  },
+  {
+    "id": 5,
+    "image": "user/5.jpg",
+    "name": "Pork Lorn",
+    "type": "Inbox",
+    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    "time": "09:59 AM",
+    "favourite": false
+  },
+  {
+    "id": 6,
+    "image": "user/6.jpg",
+    "name": "Dee Deo",
+    "type": "Inbox",
+    "text": "Popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    "time": "08:59 AM",
+    "favourite": false
+  },
+  {
+    "id": 7,
+    "image": "user/7.jpg",
+    "name": "Peg okjh",
+    "type": "Inbox",
+    "text": "A Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.",
+    "time": "07:59 AM",
+    "favourite": false
+  }
+]

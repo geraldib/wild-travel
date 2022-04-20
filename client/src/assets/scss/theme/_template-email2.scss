@@ -1,0 +1,271 @@
+/**=====================
+  76. Template email 2 CSS Start
+==========================**/
+.email-temp2 {
+  border: 0;
+  padding: 30px;
+  background-color: $white;
+  box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);
+  width: 100%;
+  .social {
+    td {
+      padding: 30;
+      .social-div {
+        margin-top: 30px;
+      }
+      .title {
+        margin: 0;
+        text-align: center;
+      }
+      .icons {
+        margin-top: 20px;
+      }
+    }
+    .div-class {
+      border-top: 1px solid #ddd;
+      margin: 20px auto 0;
+      .emails {
+        margin: 20px auto 0;
+        td {
+          color: #24695c;
+          font-size: 14px;
+          text-transform: capitalize;
+          font-size: 600;
+        }
+        .para {
+          font-size: 14px;
+          margin: 8px 0;
+          color: #aba8a8;
+        }
+        .unsub {
+          color: #24695c;
+          font-size: 14px;
+          text-transform: capitalize;
+          font-weight: 600;
+          margin: 0;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.slider {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    text-decoration: unset;
+  }
+  .li-class {
+    background-color: transparent;
+    border: aliceblue;
+    text-decoration: unset;
+  }
+  a {
+    text-decoration: none;
+  }
+  h5 {
+    margin: 0;
+    color: #777;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .main-bg-light {
+    background-color: #fafafa;
+  }
+  .title {
+    color: #444444;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1;
+  }
+  .menu {
+    width: 100%;
+  }
+  .menu li a {
+    text-transform: capitalize;
+    color: #444;
+    font-size: 16px;
+    margin-right: 15px;
+    font-weight: 600;
+  }
+  .img-slide {
+    margin-bottom: -5px;
+  }
+  .title {
+    background-color: #11bfff;
+    padding: 30px;
+  }
+  .td-title {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+  .td-desc {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 52px;
+    line-height: 58px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .para {
+    font-size: 13px;
+    color: #4e54cb;
+    text-align: left;
+    color: #fff;
+  }
+  .shopBtn {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background: #ffffff;
+    color: #f54084;
+    font-weight: bold;
+    a {
+      color: #4e54cb;
+      text-decoration: none;
+      span {
+        color: #f1415e;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.treding-product {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  &.title {
+    color: #444444;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1;
+  }
+}
+.discount {
+  margin: 0;
+  color: #aba8a8;
+  font-size: 14px;
+}
+.product {
+  margin-top: 30px;
+  .img-product {
+    width: 100%;
+  }
+  .banner {
+    max-width: 450px;
+    td {
+      width: 40%;
+    }
+    .banner-img {
+      width: 225px;
+      margin-bottom: -4px;
+    }
+    .banner-title {
+      background-color: #fafafa;
+      width: 60%;
+      h3 {
+        margin: 0;
+      }
+      .bnner-price {
+        color: #e01931;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 1px;
+        margin: 4px;
+        span {
+          color: #666666;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 25px;
+          letter-spacing: 1px;
+        }
+      }
+      .banner-dic {
+        padding: 15px 0px;
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 1px;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          background: #000;
+          padding: 8px 12px;
+        }
+      }
+    }
+  }
+}
+.main-logo {
+  padding: 10px 20px;
+  margin-bottom: -5px;
+}
+.product-box .product {
+  text-align: center;
+  position: relative;
+}
+.product-info {
+  margin-top: 15px;
+}
+.product-info h6 {
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  margin-top: 0;
+}
+.product-info h4 {
+  font-size: 16px;
+  color: #444;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1;
+}
+.footer-social-icon tr td img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.temp-social td {
+  display: inline-block;
+}
+.temp-social td i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #24695c;
+  background-color: #24695c3d;
+  transition: all 0.5s ease;
+}
+.temp-social td:nth-child(n + 2) {
+  margin-left: 15px;
+}
+/**=====================
+  76. Template Email 2 CSS Ends
+==========================**/

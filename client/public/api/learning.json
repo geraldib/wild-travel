@@ -1,0 +1,68 @@
+[
+    {
+        "Id": 1,
+        "img": "faq/3.jpg",
+        "date": "15 April 2019",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        ],
+        "title": "Web Design"
+    },
+    {
+        "Id": 2,
+        "img": "faq/2.jpg",
+        "date": "15 April 2019",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        ],
+        "title": "UX Design"
+    },
+    {
+        "Id": 3,
+        "img": "faq/2.jpg",
+        "date": "15 April 2019",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        ],
+        "title": "Web Design"
+    },
+    {
+        "Id": 4,
+        "img": "faq/1.jpg",
+        "date": "15 April 2019",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        ],
+        "title": "Web Development"
+    },
+    {
+        "Id": 5,
+        "img": "faq/3.jpg",
+        "date": "15 April 2019",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        ],
+        "title": "UI Design"
+    },
+    {
+        "Id": 6,
+        "img": "faq/2.jpg",
+        "date": "15 April 2019",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        ],
+        "title": "UX Design"
+    }
+]

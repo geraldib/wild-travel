@@ -1,0 +1,307 @@
+/**=====================
+  53. Other success CSS Start
+==========================**/
+.other-success {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);
+  width: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    text-decoration: unset;
+  }
+  a {
+    text-decoration: none;
+  }
+  h5 {
+    color: #444;
+    text-align: left;
+    font-weight: 400;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .main-bg-light {
+    background-color: #fafafa;
+  }
+  .title {
+    color: #444444;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1;
+  }
+  table {
+    margin-top: 30px;
+  }
+  table.top-0 {
+    margin-top: 0;
+  }
+}
+.header-success {
+  .delivery-img {
+    margin-bottom: 30px;
+  }
+  .para {
+    color: #aba8a8;
+  }
+  .div-class {
+    border-top: 1px solid #777;
+    height: 1px;
+    margin-top: 30px;
+  }
+  .order-deliver {
+    text-transform: capitalize;
+    font-style: italic;
+    color: #444444;
+  }
+}
+table.order-detail,
+.order-detail th,
+.order-detail td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+.order-detail .top-class {
+  padding-left: 15px;
+}
+.order-detail {
+  .desc-class {
+    margin-top: 15px;
+  }
+  .size-class {
+    font-size: 14px;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .qty-class {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+  }
+  .price-class {
+    font-size: 14px;
+    color: #444;
+    margin-top: 15px;
+  }
+  .product-class {
+    line-height: 49px;
+    font-size: 13px;
+    color: #000000;
+    padding-left: 20px;
+    text-align: left;
+    border-right: unset;
+  }
+  .price {
+    line-height: 49px;
+    padding-right: 28px;
+    font-size: 13px;
+    color: #000000;
+    text-align: right;
+    border-left: unset;
+  }
+}
+.address {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .dilivery-add {
+    background-color: #fafafa;
+    padding: 15px;
+    letter-spacing: 0.3px;
+    width: 50%;
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      line-height: 16px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #e6e8eb;
+      letter-spacing: -0.65px;
+      margin-top: 0;
+      margin-bottom: 13px;
+    }
+    p {
+      text-align: left;
+      font-weight: normal;
+      font-size: 14px;
+      color: #aba8a8;
+      line-height: 21px;
+      margin-top: 0;
+    }
+  }
+  .shipping-add {
+    background-color: #fafafa;
+    padding: 15px;
+    letter-spacing: 0.3px;
+    width: 50%;
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      line-height: 16px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #e6e8eb;
+      letter-spacing: -0.65px;
+      margin-top: 0;
+      margin-bottom: 13px;
+    }
+    p {
+      text-align: left;
+      font-weight: normal;
+      font-size: 14px;
+      color: #aba8a8;
+      line-height: 21px;
+      margin-top: 0;
+    }
+  }
+}
+.order-detail th {
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+}
+.footer {
+  .td-class {
+    padding: 30px;
+  }
+  .title {
+    margin: 0;
+    text-align: center;
+  }
+  .icons {
+    margin-top: 20px;
+  }
+  .footer-dic {
+    border-top: 1px solid #ddd;
+    margin: 20px auto 0;
+  }
+  .footer-desc {
+    margin: 20px auto 0;
+  }
+  .emails {
+    color: #24695c;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .para {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #aba8a8;
+  }
+  .unsub {
+    color: #24695c;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: underline;
+  }
+}
+.footer-social-icon tr td img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.temp-social td {
+  display: inline-block;
+}
+.temp-social td i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #24695c;
+  background-color: #24695c3d;
+  transition: all 0.5s ease;
+}
+.temp-social td:nth-child(n + 2) {
+  margin-left: 15px;
+}
+.deliver-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.deliver-status li {
+  font-size: 20px;
+  font-weight: 600;
+  width: 145px;
+  position: relative;
+}
+.deliver-status li h6 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #aba8a8;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.deliver-status li::before {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #24695c;
+}
+.deliver-status li:first-child::before,
+.deliver-status li:last-child::before {
+  width: 50%;
+}
+.deliver-status li:first-child::before,
+.deliver-status li:nth-child(2)::before {
+  right: 0;
+  left: unset;
+}
+.deliver-status li:nth-child(3)::before,
+.deliver-status li:last-child::before {
+  background-color: #f8b028;
+}
+.order-li {
+  background-color: unset;
+  border: unset;
+}
+.deliver-status li .order-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8b028;
+  position: relative;
+  display: flex;
+}
+.deliver-status li .order-icon {
+  color: #f8b028;
+}
+.deliver-status li .order-icon i {
+  margin: auto;
+  font-size: 14px;
+}
+.deliver-status li .order-icon.active {
+  background-color: #24695c;
+}
+.deliver-status li .order-icon.active i {
+  color: #ffffff;
+}
+.thanku-svg {
+  fill: #2bbd2b;
+  width: 110px;
+}
+/**=====================
+  53. Other Success CSS end
+==========================**/
