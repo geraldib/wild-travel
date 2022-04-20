@@ -7,6 +7,7 @@ import man from '../../assets/images/dashboard/1.png';
 const Profile = () => {
     const authenticated = JSON.parse(localStorage.getItem('authenticated'));
     const auth0_profile = JSON.parse(localStorage.getItem('auth0_profile'));
+    const user = JSON.parse(localStorage.getItem('user'));
     const [profile, setProfile] = useState('');
     const [name, setName] = useState('');
 
@@ -23,7 +24,7 @@ const Profile = () => {
                 </a>
                 <Link to={`${process.env.PUBLIC_URL}/app/users/userProfile`}>
                     <Image attrImage={{ className: 'img-90 rounded-circle', src: authenticated ? auth0_profile.picture : profile, alt: '' }} />
-                    <H6 attrH6={{ className: 'mt-3 f-14 f-w-600' }} >{authenticated ? auth0_profile.name : name}</H6>
+                    <H6 attrH6={{ className: 'mt-3 f-14 f-w-600' }} >{user ? user.user.name : name}</H6>
                 </Link>
                 <P attrPara={{ className: 'mb-0 font-roboto' }} >Human Resources Department</P>
                 <UL attrUL={{ className: 'flex-row simple-list' }}>
