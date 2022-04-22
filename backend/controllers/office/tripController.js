@@ -52,7 +52,7 @@ export const getTrips = async (_, res) => {
 export const getTrip = async (req, res) => {
   try {
     const trip = await Trip.findById(req.params.id);
-    if (!trip){
+    if (!trip) {
       res.status(404).send({
         data: {
           message: 'Trip not found!',
@@ -74,14 +74,14 @@ export const getTrip = async (req, res) => {
 
 export const updateTrip = async (req, res) => {
   try {
-
     const trip = await Trip.findById(req.params.id);
-    console.log(trip);
 
     trip.title = req.body.title ? req.body.title : trip.title;
     trip.guides = req.body.guides ? req.body.guides : trip.guides;
     trip.dates = req.body.dates ? req.body.dates : trip.dates;
-    trip.description = req.body.description ? req.body.description : trip.description;
+    trip.description = req.body.description
+      ? req.body.description
+      : trip.description;
 
     await trip.save();
 
@@ -96,7 +96,7 @@ export const updateTrip = async (req, res) => {
       message: 'Sorry something went wrong',
     });
   }
-}
+};
 
 export const deleteTrip = async (req, res) => {
   try {
@@ -106,11 +106,10 @@ export const deleteTrip = async (req, res) => {
         message: 'Trip Deleted',
         trip,
       },
-    })
+    });
   } catch (error) {
     return res.status(400).send({
       message: 'Sorry something went wrong',
     });
   }
 };
-

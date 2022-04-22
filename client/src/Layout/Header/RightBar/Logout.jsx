@@ -5,18 +5,17 @@ import { Btn, LI } from '../../../AbstractElements';
 import { firebase_app } from '../../../Config/Config';
 import { LogOut } from 'react-feather';
 import { Link, useNavigate } from 'react-router-dom';
-import { logout, reset } from '../../../features/auth/authSlice';
+import { logout } from '../../../store/slices/authSlice';
+import { useCallback } from 'react';
 
 const LogoutClass = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const history = useNavigate();
-  const Logout = () => {
+  const Logout = useCallback(() => {
     dispatch(logout());
-    dispatch(reset());
-    navigate('/login');
-  };
+    navigate('/');
+  }, [dispatch]);
 
   return (
     <Fragment>

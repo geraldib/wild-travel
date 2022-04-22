@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
-import { login, reset } from '../features/auth/authSlice';
+import { setLogin } from '../store/actions/authActions';
 import Spinner from '../Components/Spinner';
 
 const Login = () => {
@@ -12,19 +12,26 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const { user, isLoading, isError, isSuccess, message } = useSelector(
-    (state) => state.auth
-  );
+  const { user, isLoading, isError, isSuccess, message, isLoggedIn } =
+    useSelector((state) => state.auth);
 
   useEffect(() => {
     if (isError) {
       toast.error(message);
     }
-    if (isSuccess || user) {
+    if (isSuccess && isLoggedIn) {
       navigate('/dashboard');
     }
-    dispatch(reset());
-  }, [user, isError, isLoading, isSuccess, navigate, dispatch]);
+  }, [
+    user,
+    isError,
+    isLoading,
+    isSuccess,
+    navigate,
+    dispatch,
+    message,
+    isLoggedIn,
+  ]);
 
   const handleEmail = useCallback(
     (e) => {
@@ -46,7 +53,7 @@ const Login = () => {
       email,
       password,
     };
-    dispatch(login(userData));
+    dispatch(setLogin(userData));
   };
 
   if (isLoading) {

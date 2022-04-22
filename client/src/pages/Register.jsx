@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { register, reset } from '../features/auth/authSlice';
+import { setRegister } from '../store/actions/authActions';
 import Spinner from '../Components/Spinner';
 
 const Register = () => {
@@ -15,19 +15,26 @@ const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const { user, isLoading, isError, isSuccess, message } = useSelector(
-    (state) => state.auth
-  );
+  const { user, isLoading, isError, isSuccess, message, isLoggedIn } =
+    useSelector((state) => state.auth);
 
   useEffect(() => {
     if (isError) {
       toast.error(message);
     }
-    if (isSuccess || user) {
+    if (isSuccess || isLoggedIn) {
       navigate('/');
     }
-    dispatch(reset());
-  }, [user, isError, isLoading, isSuccess, navigate, dispatch]);
+  }, [
+    user,
+    isError,
+    isLoading,
+    isSuccess,
+    navigate,
+    dispatch,
+    message,
+    isLoggedIn,
+  ]);
 
   const handleName = useCallback(
     (e) => {
@@ -75,7 +82,7 @@ const Register = () => {
       password,
     };
 
-    dispatch(register(userData));
+    dispatch(setRegister(userData));
   };
 
   if (isLoading) {

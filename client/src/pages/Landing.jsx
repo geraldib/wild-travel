@@ -1,37 +1,48 @@
 import React from 'react';
-import { logout, reset } from '../features/auth/authSlice';
-import {Btn} from "../AbstractElements";
-import {Card} from "reactstrap";
-import {LogOut} from "react-feather";
-import {Link} from "react-router-dom";
+import { Btn } from '../AbstractElements';
+import { Card } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import selectLogedUser from '../store/selectors/select-user-data';
 
 const Landing = () => {
+  const isLoggedIn = useSelector(selectLogedUser);
 
   return (
     <div>
       <h1>WELCOME TO WILD TRAVEL</h1>
-        <Btn
+      {!isLoggedIn ? (
+        <>
+          <Btn
             attrBtn={{
-                as: Card.Header,
-                className: 'btn btn-primary-light',
-                color: 'default',
+              as: Card.Header,
+              className: 'btn btn-primary-light',
+              color: 'default',
             }}
-        >
-            <Link to={'/login'}>
-                Log IN
-            </Link>
-        </Btn>
-        <Btn
+          >
+            <Link to={'/login'}>Log IN</Link>
+          </Btn>
+          <Btn
             attrBtn={{
-                as: Card.Header,
-                className: 'btn btn-primary-light',
-                color: 'default',
+              as: Card.Header,
+              className: 'btn btn-primary-light',
+              color: 'default',
             }}
+          >
+            <Link to={'/register'}>Register</Link>
+          </Btn>{' '}
+        </>
+      ) : (
+        <Btn
+          attrBtn={{
+            as: Card.Header,
+            className: 'btn btn-primary-light',
+            color: 'default',
+          }}
         >
-            <Link to={'/register'}>
-                Register
-            </Link>
+          <Link to={'/dashboard'}>Go To Dashboard</Link>
         </Btn>
+      )}
     </div>
   );
 };
