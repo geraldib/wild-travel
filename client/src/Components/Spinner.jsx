@@ -1,16 +1,10 @@
+import React from "react";
+
 function Spinner() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '500px',
-        fontSize: '30px',
-      }}
-    >
-      <h2>Loading...</h2>
-    </div>
+      <div className="loader-box">
+          <div className="loader-19"></div>
+      </div>
   );
 }
 export default Spinner;

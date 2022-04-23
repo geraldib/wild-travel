@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const API_URL = '/api/auth/register';
 const LOGIN_API_URL = '/api/auth/login';
