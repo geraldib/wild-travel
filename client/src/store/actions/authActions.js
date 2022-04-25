@@ -2,13 +2,14 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import authService from '../services/authService';
 
 //Register user
-export const setRegister = createAsyncThunk('auth/register',
-    (payload, thunkAPI) => authService.register(payload, thunkAPI)
+export const setRegister = createAsyncThunk(
+  'auth/register',
+  (payload, thunkAPI) => authService.register(payload, thunkAPI)
 );
 
 //Login user
-export const setLogin = createAsyncThunk('auth/login',
-    (payload, thunkAPI) => authService.login(payload, thunkAPI)
+export const setLogin = createAsyncThunk('auth/login', (payload, thunkAPI) =>
+  authService.login(payload, thunkAPI)
 );
 
 // Register
