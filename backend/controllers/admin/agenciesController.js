@@ -1,14 +1,25 @@
 import { User } from '../../models/user.model.js';
 import bcrypt from 'bcryptjs';
-import * as userService from '../../services/userService.js';
+import {updateFields} from "../../services/agencyService.js";
 
-export const getUsers = async (_, res) => {
+export const getAgencies = async (req, res) => {
+  const options = {
+    page: req.query.page || 1,
+    limit: req.query.limit || 10,
+    select: "-password -__v",
+    collation: {
+      locale: 'en',
+    },
+  };
+
   try {
-    const users = await User.find().select('-password -__v').sort({ _id: -1 });
+    const agencies = await User.paginate({
+      role: "agency",
+    }, options);
     res.status(200).send({
       data: {
-        message: 'All Users',
-        users,
+        message: 'All Agencies',
+        agencies,
       },
     });
   } catch (error) {
@@ -18,13 +29,13 @@ export const getUsers = async (_, res) => {
   }
 };
 
-export const getUser = async (req, res) => {
+export const getAgency = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
+    const agency = await User.findById(req.params.id);
     res.status(200).send({
       data: {
-        message: 'User Found',
-        user,
+        message: 'Agency Found',
+        agency,
       },
     });
   } catch (error) {
@@ -34,19 +45,18 @@ export const getUser = async (req, res) => {
   }
 };
 
-export const updateUser = async (req, res) => {
+export const updateAgency = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
-    user.name = req.body.name ? req.body.name : user.name;
-    user.email = req.body.email ? req.body.email : user.email;
+    const agency = await User.findById(req.params.id);
+    updateFields(agency, req);
 
     //password Update Logic
     if (req.body.oldPassword) {
-      const result = await bcrypt.compare(req.body.oldPassword, user.password);
+      const result = await bcrypt.compare(req.body.oldPassword, agency.password);
       if (result) {
         if (req.body.newPassword) {
           if (req.body.newPassword === req.body.repeatPassword) {
-            user.password = bcrypt.hashSync(req.body.newPassword, 8);
+            agency.password = bcrypt.hashSync(req.body.newPassword, 8);
           } else {
             return res
               .status(400)
@@ -58,12 +68,12 @@ export const updateUser = async (req, res) => {
       }
     }
 
-    await user.save();
+    await agency.save();
 
     res.status(200).send({
       data: {
-        message: 'User Updated',
-        user,
+        message: 'Agency Updated',
+        agency,
       },
     });
   } catch (error) {
@@ -73,13 +83,13 @@ export const updateUser = async (req, res) => {
   }
 };
 
-export const deleteUser = async (req, res) => {
+export const deleteAgency = async (req, res) => {
   try {
-    const user = await User.findByIdAndDelete(req.params.id);
+    const agency = await User.findByIdAndDelete(req.params.id);
     res.status(200).send({
       data: {
-        message: 'User Deleted',
-        user,
+        message: 'Agency Deleted',
+        agency,
       },
     });
   } catch (error) {

@@ -4,13 +4,13 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { H6, Image, LI, UL, P } from '../../AbstractElements';
 import man from '../../assets/images/dashboard/1.png';
-import selectLogedUser from '../../store/selectors/select-user-data';
+import selectLoggedUser from '../../store/selectors/select-user-data';
 
 const Profile = () => {
   const authenticated = JSON.parse(localStorage.getItem('authenticated'));
   const auth0_profile = JSON.parse(localStorage.getItem('auth0_profile'));
   //   const { user } = useSelector((state) => state.auth);
-  const user = useSelector(selectLogedUser);
+  const user = useSelector(selectLoggedUser);
   const [profile, setProfile] = useState('');
   const [name, setName] = useState('');
 

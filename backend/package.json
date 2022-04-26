@@ -33,7 +33,11 @@
     "express-form-data": "^2.0.17",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.10",
+    "mongoose-paginate-v2": "^1.6.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.2.0"
   }
 }

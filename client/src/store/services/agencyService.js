@@ -1,8 +1,11 @@
 import axios from 'axios';
-const API_INDEX = '/api/users';
 
-// Get All Users
-const getUsers = async (thunkAPI) => {
+// const API_INDEX = `/api/agencies?page=1&limit=5`;
+// Get All Agencies
+const getAgencies = async (payload, thunkAPI) => {
+
+  const currentPage = payload?.page ? payload.page : 1;
+  const API_INDEX = `/api/agencies?page=${currentPage}&limit=3`;
   try {
     const user = JSON.parse(localStorage.getItem('user'));
     const config = {
@@ -19,8 +22,8 @@ const getUsers = async (thunkAPI) => {
   }
 };
 
-const userService = {
-  getUsers,
+const agencyService = {
+  getAgencies,
 };
 
-export default userService;
+export default agencyService;

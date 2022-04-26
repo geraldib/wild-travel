@@ -17,7 +17,7 @@ export const storeTrip = async (req, res) => {
       guides: trip.guides,
       dates: trip.dates,
       description: trip.description,
-      office: trip.office,
+      agency: trip.agency,
     };
     return res.status(201).send({
       data: {

@@ -23,7 +23,7 @@ const tripSchema = new Schema(
       type: String,
         required: true,
     },
-    office: {
+    agency: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'user',
     },

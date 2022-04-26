@@ -4,7 +4,7 @@ const paths = {
   register: '/register',
   dashboard: '/dashboard',
   trips: '/trips',
-  users: '/api/users',
+  agencies: '/api/agencies',
 };
 
 export default paths;

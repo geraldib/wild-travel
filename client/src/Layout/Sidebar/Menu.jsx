@@ -13,11 +13,11 @@ export const MENUITEMS = [
         path: '/dashboard',
       },
       {
-        title: 'Users',
+        title: 'Agencies',
         icon: User,
         type: 'link',
         active: false,
-        path: '/api/users',
+        path: '/api/agencies',
       },
     ],
   },

@@ -1,3 +1,3 @@
-const selectLogedUser = ({ auth }) => auth?.user?.user;
+const selectLoggedUser = ({ auth }) => auth?.user?.user;
 
-export default selectLogedUser;
+export default selectLoggedUser;

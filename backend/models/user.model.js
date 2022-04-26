@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+import paginate from 'mongoose-paginate-v2';
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
@@ -19,7 +19,7 @@ const userSchema = new Schema(
       required: true,
     },
     phone: {
-      type: Number,
+      type: String,
       required: true,
     },
     password: {
@@ -34,5 +34,7 @@ const userSchema = new Schema(
     timestamps: true,
   }
 );
+
+userSchema.plugin(paginate);
 
 export const User = mongoose.model('User', userSchema);

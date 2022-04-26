@@ -1,16 +1,16 @@
 import express from 'express';
-import * as tripController from '../controllers/office/tripController.js';
+import * as tripController from '../controllers/agency/tripController.js';
 import { verifyToken } from '../middleware/auth/verifyToken.js';
-import { isOffice } from '../middleware/roles/isOffice.js';
+import { isAgency } from '../middleware/roles/isAgency.js';
 
 const router = express.Router();
 
 //Admin Routes
-router.get('/', verifyToken, isOffice, tripController.getTrips);
-router.post('/add', verifyToken, isOffice, tripController.storeTrip);
-router.get('/:id', verifyToken, isOffice, tripController.getTrip);
-router.post('/update/:id', verifyToken, isOffice, tripController.updateTrip);
-router.delete('/:id', verifyToken, isOffice, tripController.deleteTrip);
+router.get('/', verifyToken, isAgency, tripController.getTrips);
+router.post('/add', verifyToken, isAgency, tripController.storeTrip);
+router.get('/:id', verifyToken, isAgency, tripController.getTrip);
+router.post('/update/:id', verifyToken, isAgency, tripController.updateTrip);
+router.delete('/:id', verifyToken, isAgency, tripController.deleteTrip);
 
 //User Routes
 

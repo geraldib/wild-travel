@@ -6,6 +6,7 @@ import path from 'path';
 import { config } from './config.js';
 import { createAdmin } from './database/seeds/userSeed.js';
 import { apiRoutes } from './routes/index.js';
+import {createAgencies} from "./database/seeds/agenciesSeed.js";
 
 // start express app
 const app = express();
@@ -18,6 +19,7 @@ config(app);
 
 //init seed
 createAdmin();
+createAgencies();
 
 // init routes
 apiRoutes(app);

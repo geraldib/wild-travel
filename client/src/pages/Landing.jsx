@@ -3,10 +3,10 @@ import { Btn } from '../AbstractElements';
 import { Card } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import selectLogedUser from '../store/selectors/select-user-data';
+import selectLoggedUser from '../store/selectors/select-user-data';
 
 const Landing = () => {
-  const isLoggedIn = useSelector(selectLogedUser);
+  const isLoggedIn = useSelector(selectLoggedUser);
 
   return (
     <div>

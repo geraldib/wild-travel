@@ -8,7 +8,7 @@ import Default from '../Components/Dashboard/Default';
 import AuthenticatedRoute from '../middleware/AuthenticatedRoute';
 import Unathenticated from '../middleware/Unathenticated';
 import AppLayout from '../Layout/Layout';
-import Users from '../pages/Users';
+import Agencies from '../pages/Agencies';
 
 const AllRoutes = () => {
   return (
@@ -20,7 +20,7 @@ const AllRoutes = () => {
         <Route path='/' element={<AuthenticatedRoute />}>
           <Route path='/' element={<AppLayout />}>
             <Route path={paths.dashboard} element={<Default />} />
-            <Route path={paths.users} element={<Users />} />
+            <Route path={paths.agencies} element={<Agencies />} />
           </Route>
         </Route>
         {/* Unathenticated */}
