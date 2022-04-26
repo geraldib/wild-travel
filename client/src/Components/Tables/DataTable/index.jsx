@@ -1,4 +1,10 @@
-import React, { Fragment, useState, useCallback, useMemo } from 'react';
+import React, {
+  Fragment,
+  useState,
+  useCallback,
+  useMemo,
+  useEffect,
+} from 'react';
 import differenceBy from 'lodash/differenceBy';
 import { toast } from 'react-toastify';
 import DataTable from 'react-data-table-component';
@@ -7,23 +13,6 @@ import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import { Breadcrumbs } from '../../../AbstractElements';
 
 const DataTables = (props) => {
-  const tableData = [
-    {
-      id: '1',
-      name: 'Gerald',
-      surname: 'Ibra',
-      phone: '0693233',
-      email: 'geri@gmail.com',
-    },
-    {
-      id: '2',
-      name: 'Rudi',
-      surname: 'Kaca',
-      phone: '0693233',
-      email: 'rudi@gmail.com',
-    },
-  ];
-
   const [data, setData] = useState(props.users);
   const [selectedRows, setSelectedRows] = useState([]);
   const [toggleCleared, setToggleCleared] = useState(false);
@@ -79,6 +68,10 @@ const DataTables = (props) => {
       </button>
     );
   }, [data, selectedRows, toggleCleared]);
+
+  useEffect(() => {
+    setData(props.users);
+  }, [props.users]);
 
   return (
     <Fragment>
