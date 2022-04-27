@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { setRegister } from '../store/actions/authActions';
-import Spinner from '../Components/Spinner';
+import Spinner from '../Components/Common/Spinner';
 
 const Register = () => {
   const [name, setName] = useState('');

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { setLogin } from '../store/actions/authActions';
-import Spinner from '../Components/Spinner';
+import Spinner from '../Components/Common/Spinner';
 
 const Login = () => {
   const [email, setEmail] = useState('');

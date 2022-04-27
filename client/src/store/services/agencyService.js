@@ -3,9 +3,9 @@ import axios from 'axios';
 // const API_INDEX = `/api/agencies?page=1&limit=5`;
 // Get All Agencies
 const getAgencies = async (payload, thunkAPI) => {
-
   const currentPage = payload?.page ? payload.page : 1;
-  const API_INDEX = `/api/agencies?page=${currentPage}&limit=3`;
+  const limit = payload?.limit ? payload.limit : 10;
+  const API_INDEX = `/api/agencies?page=${currentPage}&limit=${limit}`;
   try {
     const user = JSON.parse(localStorage.getItem('user'));
     const config = {
