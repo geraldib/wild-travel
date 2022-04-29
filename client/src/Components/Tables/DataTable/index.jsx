@@ -104,6 +104,7 @@ const DataTables = (props) => {
           <Col sm='12'>
             <Card>
               <Basic
+                limit={limit}
                 page={props?.agencies?.page}
                 setLimit={setLimit}
                 items={[5, 10, 20, 50]}
